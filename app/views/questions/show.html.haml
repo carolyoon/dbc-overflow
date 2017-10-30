@@ -1,0 +1,14 @@
+%h1
+  = @question.title
+
+%h3
+  = @question.body
+
+%h4
+  Writer:
+  = @question.author.username
+
+%ul
+  Answers:
+  - @question.answers.each do |answer|
+    %li= answer.body

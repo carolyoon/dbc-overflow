@@ -1,0 +1,11 @@
+= form_for @user do |form|
+  %p
+    = form.label :username
+    %br/
+    = form.text_field :username
+  %p
+    = form.label :password
+    %br/
+    = form.text_field :password
+  %p
+    = form.submit

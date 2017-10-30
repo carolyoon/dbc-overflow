@@ -1,6 +1,7 @@
 %h1 DBC Overflow
 
 %ul
-  -@questions.each do |question|
-  %li= question.body
+  - @questions.each do |question|
+    %li
+      %a{:href => "/questions/#{question.id}"}= question.title
 

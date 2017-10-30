@@ -13,6 +13,12 @@ class QuestionsController < ApplicationController
     @question = Question.new
   end
 
+  def show
+    respond_to do |format|
+      format.html { render :show }
+    end
+  end
+
 
   private
 
