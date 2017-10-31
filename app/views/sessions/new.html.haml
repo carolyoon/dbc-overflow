@@ -1,0 +1,6 @@
+%h1 Login
+= form_with(sessions_path) do
+  Username: #{text_field_tag :username}
+  Password: #{password_field_tag :password}
+  \#{submit_tag "Submit"}
+
